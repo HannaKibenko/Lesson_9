@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+
+/* ------------------ */
+
+.header {
+}
+.menu {
+}
+.list {
+	background-color: rgb(56, 55, 53);
+}
+
+.list > li {
+	display: inline-block;
+	position: relative;
+}
+
+.list > li:hover .sublist {
+	display: block;
+}
+
+.link {
+	color: #fff;
+}
+.sublist {
+	background-color: rgb(102, 85, 50);
+	position: absolute;
+	top: 100%;
+	left: 0;
+	padding: 10px 0;
+	display: none;
+}
+
+.sublist > li {
+	position: relative;
+	padding: 0 10px;
+	margin: 0 0 10px 0;
+}
+
+.sublist > li:hover .sub__sublist {
+	display: block;
+}
+
+.sublist > li:last-child {
+	margin-bottom: 0;
+}
+
+.sublink {
+	color: #fff;
+}
+
+.sub__sublist {
+	background-color: rgb(214, 154, 32);
+	position: absolute;
+	top: 0;
+	left: 100%;
+	padding: 10px;
+	display: none;
+}
+
+.sub__sublist li {
+	margin: 0 0 10px 0;
+}
+
+.sub__sublist li:last-child {
+	margin-bottom: 0;
+}
+
+.sub__sublink {
+	color: #fff;
+}
